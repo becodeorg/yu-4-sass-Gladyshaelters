@@ -1,6 +1,6 @@
-@use "base.scss";
+@use "_base.scss" as *;
 
-@mixin box-shadow-styling {
+@mixin box-shadow-styling () {
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
@@ -10,7 +10,7 @@ body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
   margin: 0px;
-  padding: 0px;
+  padding: $padding*0;
   background-color: #000;
   background-image: radial-gradient(
       #fff,
@@ -44,7 +44,7 @@ article {
     clear: both;
     overflow: auto;
     box-sizing: border-box;
-    @include box-shadow-style;
+    @include box-shadow-style();
   }
 
   #selling-points {

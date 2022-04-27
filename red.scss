@@ -1,5 +1,7 @@
-@use "style.css";
+@use "./style.css";
+@use "_base.scss" as *;
 
 body {
-  background-color: $primary;
+  background-color: beige;
+  color: $primary;
 }
